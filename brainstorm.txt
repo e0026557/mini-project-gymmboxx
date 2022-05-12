@@ -1,0 +1,42 @@
+Workflow:
+  1 > Decide on a theme [Gymmboxx]
+  2 > Decide on 3 pages to focus on [Home, About Us, Sign up now]
+  3 > Decide on layout of webpages
+  4 > Code websites
+  5 > README.md
+
+Revamping Gymmboxx's website (https://gymmboxx.com/)
+
+3 webpages:
+[Applicable to all webpages:
+- Navigation bar (with sign up CTA button)
+  > Navlinks :
+      >> Home
+      >> About Us (Not doing it)
+      >> Our Gyms
+      >> Contact Us (Not doing it)
+      >> Join Us
+
+- Footer (sitemap, social media icons)
+]
+
+-  Home
+  > Main background image (similar to Khong Guan's website: http://www.khongguan.com.sg/)
+  > About us section (refer to Burnt cone's webpage: https://www.burntcones.com/)
+  > Short description about gym locations with button to link to 'our gyms' page
+
+
+- Our gyms 
+  > find a gym (locations of gym using iframe Google maps)
+  [locations of each gym by tabs - refer to fortune's website: http://www.fortunefood.com.sg/our-brand.html]
+
+  Eg. All, north, central, east, west
+
+
+- Sign up now (Call to action)
+  > Membership rates
+  > Sign up form
+
+
+Color Palette (Red on Black):
+  > https://color.adobe.com/Red-Black-color-theme-9455528/
