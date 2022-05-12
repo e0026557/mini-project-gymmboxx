@@ -7,8 +7,13 @@
 - 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 
+--- FONT WEIGHTS ---
+- 400 / 500 / 600 / 700
+
+
 --- SPACING SYSTEM (px) ---
 - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
 
 --- COLORS ---
 - #a62934
@@ -18,6 +23,20 @@
 - #14110b
 
 ********************************** */
+
+/*
+--- GLOBAL RESET & SETTINGS ---
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
 
 /* 
 --- MOBILE SETTINGS (< 576px) ---
