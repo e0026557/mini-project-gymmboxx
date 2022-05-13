@@ -38,9 +38,41 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* *** GENERAL COMPONENTS *** */
+
+.btn-cta {
+  color: #f2f2f2;
+  background-color: #a62934;
+}
+
+/* *** BOOTSTRAP OVERWRITES *** */
+.navbar-dark {
+  color: #f2f2f2 !important;
+}
+
+.bg-dark {
+  background-color: ##14110b !important;
+}
+
 /* 
 --- MOBILE SETTINGS (< 576px) ---
 */
+
+/* NAVBAR */
+.navbar-brand-img {
+  height: 80px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  color: #f2f2f2;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #d9515e !important;
+}
 
 /* 
 --- MOBILE (LANDSCAPE) SETTINGS (576px and above) ---
