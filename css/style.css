@@ -40,6 +40,10 @@ body {
 
 /* *** GENERAL COMPONENTS *** */
 
+.justify-self-end {
+  justify-self: flex-end;
+}
+
 .btn-cta {
   color: #f2f2f2;
   background-color: #a62934;
