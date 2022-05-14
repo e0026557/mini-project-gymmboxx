@@ -115,6 +115,12 @@ body {
   color: #f2f2f2;
 }
 
+/* HERO SECTION */
+.section-hero {
+  /* Offset navbar height by (72+8+8+4) = 92px */
+  margin-top: 92px;
+}
+
 /* FOOTER */
 
 .footer-logo-img {
@@ -146,6 +152,12 @@ body {
     height: 74px;
   }
 
+  /* HERO SECTION */
+  .section-hero {
+    /* Offset navbar height by (84+8+8+4) = 104px */
+    margin-top: 104px;
+  }
+
   /* FOOTER */
   .footer-logo-img {
     height: 62px;
@@ -171,6 +183,12 @@ body {
   /* NAVBAR */
   .navbar-brand-img {
     height: 80px;
+  }
+
+  /* HERO SECTION */
+  .section-hero {
+    /* Offset navbar height by (90+8+8+4) = 110px */
+    margin-top: 110px;
   }
 
   /* FOOTER */
