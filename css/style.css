@@ -166,9 +166,6 @@ body {
   font-size: 40px;
   position: absolute;
   bottom: 50px;
-  left: 50%;
-
-  transform: translateX(-50%);
 
   animation: bounce 2s ease infinite;
 }
@@ -187,6 +184,11 @@ body {
   60% {
     transform: translateY(-8px);
   }
+}
+
+/* ABOUT SECTION */
+.section-header {
+  text-align: center;
 }
 
 /* FOOTER */
@@ -233,7 +235,7 @@ body {
   .section-hero-container {
     align-items: flex-start;
     gap: 8px;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 
   .section-hero-header {
