@@ -16,7 +16,7 @@
 
 
 --- COLORS ---
-- #a62934
+- #a62934  -> shade: #95252f;
 - #d9515e
 - #f2f2f2
 - #63736d
@@ -52,7 +52,7 @@ body {
 
 .btn-cta:hover {
   color: #f2f2f2;
-  background-color: #a62934;
+  background-color: #95252f;
 }
 
 /* 
@@ -88,11 +88,13 @@ body {
 .nav-link:visited {
   color: #f2f2f2 !important;
   text-align: center;
+  transition: all 0.6s;
 }
 
 .nav-link:hover,
 .nav-link:active {
   color: #d9515e !important;
+  border-bottom: 0.5px solid #d9515e;
 }
 
 .navbar-collapse-icon {
