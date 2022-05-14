@@ -45,6 +45,11 @@ body {
 /* *** GENERAL COMPONENTS (RESUSEABLE) *** */
 
 /* BUTTONS */
+.btn {
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+
 .btn:hover {
   color: #f2f2f2 !important;
 }
