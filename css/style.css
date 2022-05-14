@@ -64,6 +64,11 @@ body {
   background-color: #95252f;
 }
 
+/* BORDERS */
+.border-danger {
+  border-color: #d9515e !important;
+}
+
 /* 
 --- MOBILE SETTINGS (< 576px) ---
 */
