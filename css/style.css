@@ -28,14 +28,18 @@
 --- GLOBAL RESET & SETTINGS ---
 */
 
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} */
+}
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.screen {
+  height: 100vh;
 }
 
 /* *** GENERAL COMPONENTS (RESUSEABLE) *** */
@@ -101,40 +105,121 @@ body {
   color: #f2f2f2;
 }
 
-/* 
---- MOBILE (LANDSCAPE) SETTINGS (576px and above) ---
-*/
-@media screen and (min-width: 576px) {
+/* FOOTER */
+
+.footer-logo-img {
+  height: 52px;
+}
+
+.footer-logo-text {
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-social-icon {
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
+.footer-copyright {
+  color: #f2f2f2;
+  font-size: 8px;
 }
 
 /* 
---- TABLET SETTINGS (768px and above) ---
+--- MEDIUM SCREEN SETTINGS (768px and above) ---
 */
 @media screen and (min-width: 768px) {
   /* NAVBAR */
   .navbar-brand-img {
     height: 74px;
   }
-}
 
-/* 
---- TABLET (LANDSCAPE) SETTINGS (992px and above) ---
-*/
-@media screen and (min-width: 992px) {
-}
+  /* FOOTER */
+  .footer-logo-img {
+    height: 62px;
+  }
 
-/* 
---- LAPTOP SETTINGS (1200px and above) ---
-*/
-@media screen and (min-width: 1200px) {
-  /* NAVBAR */
-  .navbar-brand-img {
-    height: 80px;
+  .footer-logo-text {
+    font-size: 16px;
+  }
+
+  .footer-social-icon {
+    font-size: 12px;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
   }
 }
 
 /* 
---- LARGE SCREEN SETTINGS (1400px and above) ---
+--- LARGE SCREEN SETTINGS (992px and above) ---
+*/
+@media screen and (min-width: 992px) {
+  /* NAVBAR */
+  .navbar-brand-img {
+    height: 80px;
+  }
+
+  /* FOOTER */
+  .footer-logo-img {
+    height: 74px;
+  }
+
+  .footer-logo-text {
+    font-size: 20px;
+  }
+
+  .footer-social-icon {
+    font-size: 16px;
+  }
+
+  .sitemap-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .sitemap-header {
+    color: #f2f2f2;
+    font-size: 16px;
+  }
+
+  .sitemap-link,
+  .sitemap-link:link,
+  .sitemap-link:visited {
+    color: #f2f2f2;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.5s;
+    white-space: nowrap;
+  }
+
+  .sitemap-link:hover,
+  .sitemap:active {
+    color: #d9515e;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+/* 
+--- EXTRA LARGE SCREEN SETTINGS (1200px and above) ---
+*/
+@media screen and (min-width: 1200px) {
+}
+
+/* 
+--- EXTRA EXTRA LARGE SCREEN SETTINGS (1400px and above) ---
 */
 @media screen and (min-width: 1400px) {
 }

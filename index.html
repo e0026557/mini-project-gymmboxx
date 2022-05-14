@@ -39,10 +39,10 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <!-- LOGO -->
-        <a class="navbar-brand ms-lg-2" href="/index.html">
+        <a class="navbar-brand ms-md-2 ms-lg-3" href="/index.html">
           <img
             class="navbar-brand-img"
             src="images/GymmBoxx logo.png"
@@ -58,7 +58,7 @@
         >
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler me-md-2 me-lg-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -96,7 +96,107 @@
       </div>
     </nav>
 
-    <main></main>
+    <!-- MAIN -->
+    <main>
+      <div class="screen bg-danger"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="container-fluid bg-info pt-4 pb-2 d-flex flex-column justify-content-center align-items-center gap-5 bg-dark"
+    >
+      <div class="row w-100 align-items-start">
+        <!-- LOGO & SOCIAL ICONS -->
+        <div
+          class="col-lg-5 align-self-center d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <!-- LOGO -->
+          <div
+            class="footer-logo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="footer-logo-img"
+              src="/images/GymmBoxx logo.png"
+              alt="GymmBoxx Logo"
+            />
+            <span class="footer-logo-text">GymmBoxx</span>
+          </div>
+          <!-- SOCIAL ICONS -->
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 gap-md-3"
+          >
+            <!-- FACEBOOK ICON -->
+            <i class="footer-social-icon fa-brands fa-facebook"></i>
+            <!-- TWITTER ICON -->
+            <i class="footer-social-icon fa-brands fa-twitter"></i>
+            <!-- INSTAGRAM ICON -->
+            <i class="footer-social-icon fa-brands fa-instagram"></i>
+            <!-- YOUTUBE ICON -->
+            <i class="footer-social-icon fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <!-- SITEMAP -->
+        <div class="col-lg-7 col-xxl-6 d-none d-lg-block">
+          <div class="row align-items-start mt-3">
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Company</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">About Us</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Oppportunity</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Gyms</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/gyms.html">Our Gyms</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Gym Rules</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Members</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/signup.html"
+                    >Membership Plans</a
+                  >
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">FAQs</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <span class="footer-copyright"
+        >Copyright 2022 &copy; GYMMBOXX Singapore</span
+      >
+    </footer>
 
     <!-- Bootstrap JS (Local) -->
     <script src="js/bootstrap.bundle.min.js"></script>
