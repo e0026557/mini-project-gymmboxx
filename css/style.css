@@ -16,10 +16,10 @@
 
 
 --- COLORS ---
-- #a62934  -> shade: #95252f;
+- #a62934  -> shade: #95252f
 - #d9515e
 - #f2f2f2
-- #63736d
+- #63736d  -> shade: #596862
 - #14110b
 
 ********************************** */
@@ -40,13 +40,23 @@ body {
   background-color: #14110b;
 }
 
-.screen {
-  height: 100vh;
+/* --- GENERAL COMPONENTS (RESUSEABLE) --- */
+
+/* *** BACKGROUND *** */
+.bg-texture {
+  background-image: url(../images/texture.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
 }
 
-/* *** GENERAL COMPONENTS (RESUSEABLE) *** */
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
 
-/* BUTTONS */
+/* *** BUTTONS *** */
 .btn {
   border-radius: 16px;
   padding: 4px 16px;
@@ -62,20 +72,27 @@ body {
 }
 
 .btn-cta:hover {
-  color: #f2f2f2;
   background-color: #95252f;
 }
 
-/* BORDERS */
+.btn-info {
+  color: #f2f2f2;
+  background-color: #63736d;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #596862;
+}
+
+/* *** BORDERS ***  */
 .border-danger {
   border-color: #d9515e !important;
 }
 
-/* 
---- MOBILE SETTINGS (< 576px) ---
-*/
+/* --- MOBILE SETTINGS (< 576px) --- */
 
-/* NAVBAR */
+/* *** NAVBAR *** */
 .navbar-dark {
   color: #f2f2f2 !important;
 }
@@ -117,7 +134,7 @@ body {
   color: #f2f2f2;
 }
 
-/* MAIN */
+/* *** MAIN *** */
 .main {
   /* Offset navbar height by (72+8+8+4) = 92px */
   margin-top: 92px;
@@ -125,7 +142,7 @@ body {
   margin-bottom: 208px;
 }
 
-/* HERO SECTION */
+/* *** HERO SECTION *** */
 .section-hero {
   background-image: url(../images/hero.jpg);
   background-size: cover;
@@ -163,7 +180,7 @@ body {
 }
 
 .section-hero-icon {
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
   bottom: 50px;
 
@@ -186,12 +203,47 @@ body {
   }
 }
 
-/* ABOUT SECTION */
-.section-header {
+/* *** ABOUT SECTION *** */
+.about-header {
   text-align: center;
+  font-size: 20px;
 }
 
-/* FOOTER */
+.about-img-equipment {
+  background-image: url(../images/equipment.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.about-img-training {
+  background-image: url(../images/training.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.about-img-weightlifting {
+  background-image: url(../images/workout.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.about-text-box {
+  height: auto;
+}
+
+.about-title {
+  font-size: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+/* *** FOOTER *** */
 .footer-logo-img {
   height: 52px;
 }
@@ -209,16 +261,14 @@ body {
   font-size: 8px;
 }
 
-/* 
---- MEDIUM SCREEN SETTINGS (768px and above) ---
-*/
+/* --- MEDIUM SCREEN SETTINGS (768px and above) --- */
 @media screen and (min-width: 768px) {
-  /* NAVBAR */
+  /* *** NAVBAR *** */
   .navbar-brand-img {
     height: 74px;
   }
 
-  /* MAIN */
+  /* *** MAIN *** */
   .main {
     /* Offset navbar height by (84+8+8+4) = 104px */
     margin-top: 104px;
@@ -226,7 +276,7 @@ body {
     margin-bottom: 208px;
   }
 
-  /* HERO SECTION */
+  /* *** HERO SECTION *** */
   .section-hero {
     /* Offset height by navbar height */
     height: calc(100vh - 104px);
@@ -246,7 +296,29 @@ body {
     font-size: 34px;
   }
 
-  /* FOOTER */
+  .section-hero-icon {
+    font-size: 35px;
+  }
+
+  /* *** ABOUT SECTION *** */
+  .about-header {
+    font-size: 34px;
+  }
+  .about-img-equipment,
+  .about-img-training,
+  .about-img-weightlifting {
+    height: 50vh;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  /* *** FOOTER *** */
   .footer-logo-img {
     height: 62px;
   }
@@ -264,16 +336,14 @@ body {
   }
 }
 
-/* 
---- LARGE SCREEN SETTINGS (992px and above) ---
-*/
+/* --- LARGE SCREEN SETTINGS (992px and above) --- */
 @media screen and (min-width: 992px) {
-  /* NAVBAR */
+  /* *** NAVBAR *** */
   .navbar-brand-img {
     height: 80px;
   }
 
-  /* MAIN */
+  /* *** MAIN *** */
   .main {
     /* Offset navbar height by (90+8+8+4) = 110px */
     margin-top: 110px;
@@ -281,7 +351,7 @@ body {
     margin-bottom: 281.188px;
   }
 
-  /* HERO SECTION */
+  /* *** HERO SECTION *** */
   .section-hero {
     /* Offset height by navbar height */
     height: calc(100vh - 110px);
@@ -301,7 +371,32 @@ body {
     font-size: 34px;
   }
 
-  /* FOOTER */
+  .section-hero-icon {
+    font-size: 40px;
+  }
+
+  /* *** ABOUT SECTION *** */
+  .about-header {
+    font-size: 34px;
+  }
+
+  .about-img-equipment,
+  .about-img-training,
+  .about-img-weightlifting {
+    height: 60vh;
+  }
+
+  .about-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* *** FOOTER *** */
   .footer-logo-img {
     height: 74px;
   }
@@ -349,10 +444,9 @@ body {
   }
 }
 
-/* 
---- EXTRA LARGE SCREEN SETTINGS (1200px and above) ---
-*/
+/* --- EXTRA LARGE SCREEN SETTINGS (1200px and above) --- */
 @media screen and (min-width: 1200px) {
+  /* *** HERO SECTION *** */
   .section-hero-container {
     align-items: flex-start;
     gap: 8px;
@@ -366,13 +460,37 @@ body {
   .section-hero-tagline {
     font-size: 34px;
   }
+
+  /* *** ABOUT SECTION *** */
+  .about-header {
+    font-size: 34px;
+  }
+
+  .about-img-equipment,
+  .about-img-training,
+  .about-img-weightlifting {
+    max-height: 500px;
+  }
+
+  .about-text-bg,
+  .about-text-box {
+    max-width: 450px;
+  }
+
+  .about-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 
-/* 
---- EXTRA EXTRA LARGE SCREEN SETTINGS (1400px and above) ---
-*/
+/* --- EXTRA EXTRA LARGE SCREEN SETTINGS (1400px and above) --- */
 @media screen and (min-width: 1400px) {
-  /* HERO SECTION */
+  /* *** HERO SECTION *** */
   .section-hero-container {
     align-items: flex-start;
     gap: 8px;
@@ -380,11 +498,9 @@ body {
   }
 }
 
-/* 
---- EXTRA EXTRA EXTRA LARGE SCREEN SETTINGS (1600px and above) ---
-*/
+/* --- EXTRA EXTRA EXTRA LARGE SCREEN SETTINGS (1600px and above) --- */
 @media screen and (min-width: 1600px) {
-  /* HERO SECTION */
+  /* *** HERO SECTION *** */
   .section-hero-container {
     align-items: flex-start;
     gap: 8px;
