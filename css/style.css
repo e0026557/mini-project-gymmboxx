@@ -28,20 +28,21 @@
 --- GLOBAL RESET & SETTINGS ---
 */
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-/* *** GENERAL COMPONENTS *** */
+/* *** GENERAL COMPONENTS (RESUSEABLE) *** */
 
-.justify-self-end {
-  justify-self: flex-end;
+/* BUTTONS */
+.btn:hover {
+  color: #f2f2f2 !important;
 }
 
 .btn-cta {
@@ -49,17 +50,9 @@ body {
   background-color: #a62934;
 }
 
-/* *** BOOTSTRAP OVERWRITES *** */
-.navbar-dark {
-  color: #f2f2f2 !important;
-}
-
-.bg-dark {
-  background-color: ##14110b !important;
-}
-
-.btn:hover {
-  color: #f2f2f2 !important;
+.btn-cta:hover {
+  color: #f2f2f2;
+  background-color: #a62934;
 }
 
 /* 
@@ -67,8 +60,21 @@ body {
 */
 
 /* NAVBAR */
+.navbar-dark {
+  color: #f2f2f2 !important;
+}
+
+.bg-dark {
+  background-color: #14110b !important;
+}
+
 .navbar-brand-img {
-  height: 80px;
+  height: 62px;
+}
+
+.navbar-toggler {
+  border-color: #f2f2f2 !important;
+  padding: 6px 12px;
 }
 
 .navbar-toggler:focus,
@@ -80,7 +86,8 @@ body {
 .nav-link,
 .nav-link:link,
 .nav-link:visited {
-  color: #f2f2f2;
+  color: #f2f2f2 !important;
+  text-align: center;
 }
 
 .nav-link:hover,
@@ -88,7 +95,8 @@ body {
   color: #d9515e !important;
 }
 
-.collapse-icon {
+.navbar-collapse-icon {
+  color: #f2f2f2;
 }
 
 /* 
@@ -101,6 +109,10 @@ body {
 --- TABLET SETTINGS (768px and above) ---
 */
 @media screen and (min-width: 768px) {
+  /* NAVBAR */
+  .navbar-brand-img {
+    height: 74px;
+  }
 }
 
 /* 
@@ -113,6 +125,10 @@ body {
 --- LAPTOP SETTINGS (1200px and above) ---
 */
 @media screen and (min-width: 1200px) {
+  /* NAVBAR */
+  .navbar-brand-img {
+    height: 80px;
+  }
 }
 
 /* 

@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <!-- LOGO -->
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand ms-lg-2" href="/index.html">
           <img
             class="navbar-brand-img"
             src="images/GymmBoxx logo.png"
@@ -52,7 +52,7 @@
 
         <!-- CTA BUTTON (Appears for mid-size devices only) -->
         <a
-          class="btn btn-cta ms-auto me-4 d-none d-md-block d-lg-none"
+          class="btn btn-cta ms-auto me-3 d-none d-md-block d-lg-none"
           href="/signup.html"
           >Join Us</a
         >
@@ -67,10 +67,12 @@
           aria-label="Toggle navigation"
         >
           <!-- COLLAPSE BUTTON -->
-          <span><i class="collapse-icon fa-solid fa-bars"></i></span>
+          <span><i class="navbar-collapse-icon fa-solid fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul
+            class="navbar-nav w-100 align-items-center mx-auto mx-lg-0 me-lg-auto mb-2 mb-lg-0"
+          >
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
@@ -83,11 +85,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
+            <!-- CTA BUTTON (Appears for small devices only) -->
+            <li class="nav-item text-center ms-lg-auto me-lg-2 mt-3 mt-lg-0">
+              <a class="btn btn-cta d-md-none d-lg-block" href="/signup.html"
+                >Join Us</a
+              >
+            </li>
           </ul>
-          <!-- CTA BUTTON -->
-          <a class="btn btn-cta d-md-none d-lg-block" href="/signup.html"
-            >Join Us</a
-          >
         </div>
       </div>
     </nav>
