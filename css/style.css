@@ -169,6 +169,11 @@ body {
   gap: 4px;
 }
 
+.section-hero-header,
+.section-hero-tagline {
+  text-align: center;
+}
+
 .section-hero-header {
   font-size: 36px;
 }
@@ -207,38 +212,49 @@ body {
   font-size: 20px;
 }
 
-.about-img-equipment {
-  background-image: url(../images/equipment.jpg);
+.about-img-equipment,
+.about-img-training,
+.about-img-weightlifting {
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 250px;
+  width: 350px;
+}
+
+.about-img-equipment {
+  background-image: url(../images/equipment.jpg);
 }
 
 .about-img-training {
   background-image: url(../images/training.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
 }
 
 .about-img-weightlifting {
   background-image: url(../images/workout.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
+}
+
+.about-text-bg {
+  height: 250px;
+  width: 350px;
 }
 
 .about-text-box {
-  height: auto;
+  position: relative;
 }
 
 .about-title {
   font-size: 18px;
+  padding-bottom: 4px;
 }
 
 .about-text {
   font-size: 12px;
-  padding-bottom: 30px;
+}
+
+.about-btn {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
 }
 
 /* *** FOOTER *** */
@@ -284,6 +300,11 @@ body {
     transform: translateX(-40%);
   }
 
+  .section-hero-header,
+  .section-hero-tagline {
+    text-align: left;
+  }
+
   .section-hero-header {
     font-size: 62px;
   }
@@ -298,12 +319,18 @@ body {
 
   /* *** ABOUT SECTION *** */
   .about-header {
-    font-size: 34px;
+    font-size: 36px;
   }
   .about-img-equipment,
   .about-img-training,
   .about-img-weightlifting {
-    height: 35vh;
+    height: 400px;
+    width: 350px;
+  }
+
+  .about-text-bg {
+    height: 350px;
+    width: 350px;
   }
 
   .about-title {
@@ -371,23 +398,27 @@ body {
 
   /* *** ABOUT SECTION *** */
   .about-header {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .about-img-equipment,
   .about-img-training,
   .about-img-weightlifting {
-    height: 60vh;
+    height: 400px;
+    width: 400px;
+  }
+
+  .about-text-bg {
+    height: 350px;
+    width: 350px;
   }
 
   .about-title {
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
 
   .about-text {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
   }
 
   /* *** FOOTER *** */
@@ -463,23 +494,21 @@ body {
   .about-img-equipment,
   .about-img-training,
   .about-img-weightlifting {
-    max-height: 500px;
+    height: 450px;
+    width: 450px;
   }
 
-  .about-text-bg,
-  .about-text-box {
-    max-height: 400px;
-    max-width: 450px;
+  .about-text-bg {
+    height: 400px;
+    width: 400px;
   }
 
   .about-title {
     font-size: 30px;
-    margin-bottom: 20px;
   }
 
   .about-text {
     font-size: 18px;
-    margin-bottom: 10px;
   }
 }
 
@@ -490,23 +519,5 @@ body {
     align-items: flex-start;
     gap: 8px;
     transform: translateX(-120%);
-  }
-}
-
-/* --- EXTRA EXTRA EXTRA LARGE SCREEN SETTINGS (1600px and above) --- */
-@media screen and (min-width: 1600px) {
-  /* *** HERO SECTION *** */
-  .section-hero-container {
-    align-items: flex-start;
-    gap: 8px;
-    transform: translateX(-150%);
-  }
-
-  .section-hero-header {
-    font-size: 74px;
-  }
-
-  .section-hero-tagline {
-    font-size: 36px;
   }
 }
