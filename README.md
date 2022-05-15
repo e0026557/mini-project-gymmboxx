@@ -1,8 +1,8 @@
 # **GymmBoxx**
 
-![Screenshot of GYMMBOXX homepage](homepage.jpg)
+![Screenshot of GYMMBOXX homepage](images/screenshot/devices%20screenshot.png)
 
-Link to project webpage [here](https://www.example.com).
+Link to project webpage [here](https://e0026557.github.io/mini-project-gymmboxx/).
 
 ## Project Summary
 
@@ -31,4 +31,10 @@ Link to Figma wireframes [here](https://www.figma.com/file/PzihCkSHrFEhRXfrdamYM
 
 ## Technology Used
 
+- HTML5
+- CSS3
+- Bootstrap 5
+
 ## Deployment
+
+The project webpage is deployed using Github pages.
