@@ -39,7 +39,67 @@
   </head>
 
   <body>
-    <main>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar fixed-top border-bottom border-4 border-danger navbar-expand-lg navbar-dark bg-dark"
+    >
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand ms-md-2 ms-lg-3" href="/index.html">
+          <img
+            class="navbar-brand-img"
+            src="images/GymmBoxx logo.png"
+            alt="GymmBoxx logo"
+          />
+        </a>
+
+        <!-- CTA BUTTON (Appears for mid-size devices only) -->
+        <a
+          class="btn btn-cta ms-auto me-3 d-none d-md-block d-lg-none"
+          href="/signup.html"
+          >Join Us</a
+        >
+
+        <button
+          class="navbar-toggler me-md-2 me-lg-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- COLLAPSE BUTTON -->
+          <span><i class="navbar-collapse-icon fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav w-100 align-items-center mx-auto mx-lg-0 me-lg-auto mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gyms.html">Our Gyms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!-- CTA BUTTON (Appears for small devices only) -->
+            <li class="nav-item text-center ms-lg-auto me-lg-2 mt-3 mt-lg-0">
+              <a class="btn btn-cta d-md-none d-lg-block" href="/signup.html"
+                >Join Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
       <div class="container pt-5">
         <!-- MOBILE -->
         <select
@@ -63,7 +123,7 @@
             checked
           />
           <label
-            class="btn btn-secondary ps-4 pe-4 ps-lg-5 pe-lg-5"
+            class="my-btn btn btn-danger ps-4 pe-4 ps-lg-5 pe-lg-5 border-0"
             for="option1"
             style="
               border-top-left-radius: 1rem;
@@ -82,7 +142,7 @@
             autocomplete="off"
           />
           <label
-            class="btn btn-secondary ps-4 pe-4 ps-lg-5 pe-lg-5"
+            class="my-btn btn btn-danger ps-4 pe-4 ps-lg-5 pe-lg-5 border-0"
             for="option2"
             style="
               border-top-left-radius: 1rem;
@@ -101,7 +161,7 @@
             autocomplete="off"
           />
           <label
-            class="btn btn-secondary ps-4 pe-4 ps-lg-5 pe-lg-5"
+            class="my-btn btn btn-danger ps-4 pe-4 ps-lg-5 pe-lg-5 border-0"
             for="option3"
             style="
               border-top-left-radius: 1rem;
@@ -120,7 +180,7 @@
             autocomplete="off"
           />
           <label
-            class="btn btn-secondary ps-4 pe-4 ps-lg-5 pe-lg-5"
+            class="my-btn btn btn-danger ps-4 pe-4 ps-lg-5 pe-lg-5 border-0"
             for="option4"
             style="
               border-top-left-radius: 1rem;
@@ -139,7 +199,7 @@
             autocomplete="off"
           />
           <label
-            class="btn btn-secondary ps-4 pe-4 ps-lg-5 pe-lg-5"
+            class="my-btn btn btn-danger ps-4 pe-4 ps-lg-5 pe-lg-5 border-0"
             for="option5"
             style="
               border-top-left-radius: 1rem;
@@ -152,21 +212,22 @@
         </div>
       </div>
       <div
-        class="container m-auto p-md-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+        class="container m-auto pb-5 ps-md-0 pe-md-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
       >
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Bedok Point</h5>
-              <p class="card-text">
-                Located at Bedok Point shopping mall, Level 4. This GYMMBOXX
-                outlet has a wide range of cardio machines, lots of space for
-                stretching or floor workouts, spacious changing rooms and has a
-                total of 7 power racks.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Bedok Point</h5>
+                <p class="card-text">
+                  Located at Bedok Point shopping mall, Level 4. This GYMMBOXX
+                  outlet has a wide range of cardio machines, lots of space for
+                  stretching or floor workouts, spacious changing rooms and has
+                  a total of 7 power racks.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7512625873896!2d103.932264!3d1.3251490000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4a3549a9450aa27!2sGYMMBOXX!5e0!3m2!1sen!2ssg!4v1652429480440!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -178,16 +239,17 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Bishan CC</h5>
-              <p class="card-text">
-                Located at Bishan Community Club, Level 4. This GYMMBOXX outlet
-                is equipped with an interactive cardio line, a spacious
-                functional area with the latest trending fitness accessories and
-                an extended 31m lunge track.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Bishan CC</h5>
+                <p class="card-text">
+                  Located at Bishan Community Club, Level 4. This GYMMBOXX
+                  outlet is equipped with an interactive cardio line, a spacious
+                  functional area with the latest trending fitness accessories
+                  and an extended 31m lunge track.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.421980765955!2d103.850842!3d1.349925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1889d0456bf6a9cf!2sGYMMBOXX%20Bishan!5e0!3m2!1sen!2ssg!4v1652429596305!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -199,16 +261,17 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Canberra Plaza</h5>
-              <p class="card-text">
-                Located at Canberra Plaza, Level 3. This GYMMBOXX outlet is the
-                heartbeat of this estate. An extensive range of machines, plenty
-                of floor space for functional training exercises and a haven for
-                our lifting community.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Canberra Plaza</h5>
+                <p class="card-text">
+                  Located at Canberra Plaza, Level 3. This GYMMBOXX outlet is
+                  the heartbeat of this estate. An extensive range of machines,
+                  plenty of floor space for functional training exercises and a
+                  haven for our lifting community.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.552500999045!2d103.83058800000002!3d1.443306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d2e1bb0eccb7036!2sCanberra%20Plaza!5e0!3m2!1sen!2ssg!4v1652429710912!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -220,16 +283,17 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Century Square</h5>
-              <p class="card-text">
-                Located at Century Square shopping mall, Level 3. This GYMMBOXX
-                outlet has a functional training zone equipped with the latest
-                fitness accessories, a 30m lunge track and an unlimited range of
-                free weights.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Century Square</h5>
+                <p class="card-text">
+                  Located at Century Square shopping mall, Level 3. This
+                  GYMMBOXX outlet has a functional training zone equipped with
+                  the latest fitness accessories, a 30m lunge track and an
+                  unlimited range of free weights.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.3536439785216!2d103.94349200000002!3d1.35218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7775e9803503e5c3!2sGYMMBOXX%20Century%20Square!5e0!3m2!1sen!2ssg!4v1652429784294!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -241,16 +305,17 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Ci Yuan CC</h5>
-              <p class="card-text">
-                Located at Ci Yuan CC, Level 4. This GYMMBOXX outlet is equipped
-                with an interactive cardio line and a spacious functional area
-                equipped with a punching bag and a variety of fitness
-                accessories .
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Ci Yuan CC</h5>
+                <p class="card-text">
+                  Located at Ci Yuan CC, Level 4. This GYMMBOXX outlet is
+                  equipped with an interactive cardio line and a spacious
+                  functional area equipped with a punching bag and a variety of
+                  fitness accessories .
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.3378993846545!2d103.883042!3d1.375313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff0789338b66bb7!2sCi%20Yuan%20Community%20Club!5e0!3m2!1sen!2ssg!4v1652429848604!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -262,16 +327,17 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">JCube</h5>
-              <p class="card-text">
-                Located at JCube, Level 3. This GYMMBOXX outlet has all the
-                frills for an avid gym user. Top of the line cardio machines,
-                extensive range of free weights and a wide open space for your
-                functional training.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">JCube</h5>
+                <p class="card-text">
+                  Located at JCube, Level 3. This GYMMBOXX outlet has all the
+                  frills for an avid gym user. Top of the line cardio machines,
+                  extensive range of free weights and a wide open space for your
+                  functional training.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.475773644082!2d103.740321!3d1.333429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ec1712b677603e7!2sGymmboxx!5e0!3m2!1sen!2ssg!4v1652429922502!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -283,15 +349,16 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Keat Hong CC</h5>
-              <p class="card-text">
-                Located at Keat Hong Community Club, Level 4. A sizeable gym
-                furnished with the latest cardio machines, boundless supply of
-                free weights and an ample space for functional workouts.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Keat Hong CC</h5>
+                <p class="card-text">
+                  Located at Keat Hong Community Club, Level 4. A sizeable gym
+                  furnished with the latest cardio machines, boundless supply of
+                  free weights and an ample space for functional workouts.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.606560919872!2d103.75164721698!3d1.3856308726013853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a90ae82c8c5579c!2sGYMMBOXX%20Keat%20Hong!5e0!3m2!1sen!2ssg!4v1652429976543!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -303,15 +370,16 @@
         <div class="col">
           <div class="card h-100 border-0 rounded-0">
             <div class="card-body">
-              <h5 class="card-title">Kebun Baru CC</h5>
-              <p class="card-text">
-                Located at Kebun Baru Community Club, Level 2. A boutique size
-                gym fit out with the latest cardio and strength machines. This
-                GYMMBOXX outlet is tailored for on-the-go gym users.
-              </p>
+              <div class="card-overlay">
+                <h5 class="card-title">Kebun Baru CC</h5>
+                <p class="card-text">
+                  Located at Kebun Baru Community Club, Level 2. A boutique size
+                  gym fit out with the latest cardio and strength machines. This
+                  GYMMBOXX outlet is tailored for on-the-go gym users.
+                </p>
+              </div>
             </div>
             <iframe
-              class="h-100 w-100"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.344863636877!2d103.837466!3d1.373228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b9a3ffe441e00f!2sGYMMBOXX%20Kebun%20Baru!5e0!3m2!1sen!2ssg!4v1652429075847!5m2!1sen!2ssg"
               style="border: 0"
               allowfullscreen=""
@@ -322,6 +390,103 @@
         </div>
       </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="container-fluid border-top border-4 border-danger pt-4 pb-3 d-flex flex-column justify-content-center align-items-center gap-5 bg-dark"
+    >
+      <div class="row w-100 align-items-start">
+        <!-- LOGO & SOCIAL ICONS -->
+        <div
+          class="col-lg-5 align-self-center d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-3"
+        >
+          <!-- LOGO -->
+          <div
+            class="footer-logo d-flex flex-column justify-content-center align-items-center ms-lg-5"
+          >
+            <img
+              class="footer-logo-img"
+              src="/images/GymmBoxx logo.png"
+              alt="GymmBoxx Logo"
+            />
+            <span class="footer-logo-text">GymmBoxx</span>
+          </div>
+          <!-- SOCIAL ICONS -->
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 gap-md-3 ms-lg-5"
+          >
+            <!-- FACEBOOK ICON -->
+            <i class="footer-social-icon fa-brands fa-facebook"></i>
+            <!-- TWITTER ICON -->
+            <i class="footer-social-icon fa-brands fa-twitter"></i>
+            <!-- INSTAGRAM ICON -->
+            <i class="footer-social-icon fa-brands fa-instagram"></i>
+            <!-- YOUTUBE ICON -->
+            <i class="footer-social-icon fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <!-- SITEMAP -->
+        <div class="col-lg-7 col-xxl-6 d-none d-lg-block">
+          <div class="row align-items-start mt-3">
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Company</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">About Us</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Oppportunity</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Gyms</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/gyms.html">Our Gyms</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Gym Rules</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Members</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/signup.html"
+                    >Membership Plans</a
+                  >
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">FAQs</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <span class="footer-copyright mt-lg-4"
+        >Copyright 2022 &copy; GYMMBOXX Singapore</span
+      >
+    </footer>
 
     <!-- Bootstrap JS (Local) -->
     <script src="js/bootstrap.bundle.min.js"></script>

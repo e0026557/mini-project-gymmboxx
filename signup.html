@@ -39,9 +39,69 @@
   </head>
 
   <body>
-    <main>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar fixed-top border-bottom border-4 border-danger navbar-expand-lg navbar-dark bg-dark"
+    >
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand ms-md-2 ms-lg-3" href="/index.html">
+          <img
+            class="navbar-brand-img"
+            src="images/GymmBoxx logo.png"
+            alt="GymmBoxx logo"
+          />
+        </a>
+
+        <!-- CTA BUTTON (Appears for mid-size devices only) -->
+        <a
+          class="btn btn-cta ms-auto me-3 d-none d-md-block d-lg-none"
+          href="/signup.html"
+          >Join Us</a
+        >
+
+        <button
+          class="navbar-toggler me-md-2 me-lg-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- COLLAPSE BUTTON -->
+          <span><i class="navbar-collapse-icon fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav w-100 align-items-center mx-auto mx-lg-0 me-lg-auto mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gyms.html">Our Gyms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!-- CTA BUTTON (Appears for small devices only) -->
+            <li class="nav-item text-center ms-lg-auto me-lg-2 mt-3 mt-lg-0">
+              <a class="btn btn-cta d-md-none d-lg-block" href="/signup.html"
+                >Join Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
       <div class="container-fluid text-center pt-5 pb-1">
-        <span class="white fs-1 fw-bold">OUR RATES</span>
+        <span class="title white">Membership Plans</span>
       </div>
       <!-- AGE GROUP SELECTION -->
       <div
@@ -61,42 +121,174 @@
       <div class="container-fluid">
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="text-center bg-white border rounded-top">
-              <h2 class="black p-3 fw-bold">1 Month</h2>
+            <div class="container-month text-center bg-white border">
+              <span class="month">1 Month</span>
             </div>
-            <div class="text-center bg-gray pt-4 pb-5 rounded-bottom">
-              <span class="white fs-1 fw-bold">$95</span><br />
-              <span class="fs-5 fw-bold" style="opacity: 0"
-                >This is transparent</span
-              >
+            <div class="container-price text-center bg-gray bg-texture">
+              <div class="bg-overlay pt-4 pb-5">
+                <span class="price white">$95</span><br />
+                <span class="fs-5 fw-bold" style="opacity: 0"
+                  >This is transparent</span
+                >
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="text-center bg-white border rounded-top">
-              <h2 class="black p-3 fw-bold">6 Months</h2>
+            <div class="container-month text-center bg-white border">
+              <span class="month">6 Months</span>
             </div>
-            <div class="text-center bg-gray pt-4 pb-5 rounded-bottom">
-              <span class="white fs-1 fw-bold">$450</span><br />
-              <span class="fs-5 fw-bold white">That's $75 per month</span>
+            <div class="container-price text-center bg-gray bg-texture">
+              <div class="bg-overlay pt-4 pb-5">
+                <span class="price white">$450</span><br />
+                <span class="fs-5 fw-bold white">That's $75 per month</span>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mx-auto">
-            <div class="text-center bg-white border rounded-top">
-              <h2 class="black p-3 fw-bold">12 Months</h2>
+            <div class="container-month text-center bg-white border">
+              <span class="month">12 Months</span>
             </div>
-            <div class="text-center bg-gray pt-4 pb-5 rounded-bottom">
-              <span class="white fs-1 fw-bold">$720</span><br />
-              <span class="fs-5 fw-bold white">That's $60 per month</span>
+            <div class="container-price text-center bg-gray bg-texture">
+              <div class="bg-overlay pt-4 pb-5">
+                <span class="price white">$720</span><br />
+                <span class="fs-5 fw-bold white">That's $60 per month</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="container-fluid text-center pt-5 pb-1">
-        <span class="white fs-1 fw-bold">Experience Gymmboxx now</span>
+        <span class="title white">Experience Gymmboxx now</span>
       </div>
       <!-- SIGN UP FORM -->
+      <div class="container container-form bg-texture mb-5">
+        <div class="row bg-overlay m-0 p-3 p-md-4 p-lg-5">
+          <div class="col-7 col-md-5">
+            <label class="form-label">First name:</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-7 col-md-5 mx-md-auto">
+            <label class="form-label">Last name:</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-9 col-md-7">
+            <label class="form-label">Contact number:</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-12 col-md-10">
+            <label class="form-label">Email:</label>
+            <input type="email" class="form-control" />
+          </div>
+          <div class="col-12">
+            <button
+              type="button"
+              id="btn-submit"
+              class="btn btn-danger rounded-pill mb-3"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="container-fluid border-top border-4 border-danger pt-4 pb-3 d-flex flex-column justify-content-center align-items-center gap-5 bg-dark"
+    >
+      <div class="row w-100 align-items-start">
+        <!-- LOGO & SOCIAL ICONS -->
+        <div
+          class="col-lg-5 align-self-center d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-3"
+        >
+          <!-- LOGO -->
+          <div
+            class="footer-logo d-flex flex-column justify-content-center align-items-center ms-lg-5"
+          >
+            <img
+              class="footer-logo-img"
+              src="/images/GymmBoxx logo.png"
+              alt="GymmBoxx Logo"
+            />
+            <span class="footer-logo-text">GymmBoxx</span>
+          </div>
+          <!-- SOCIAL ICONS -->
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 gap-md-3 ms-lg-5"
+          >
+            <!-- FACEBOOK ICON -->
+            <i class="footer-social-icon fa-brands fa-facebook"></i>
+            <!-- TWITTER ICON -->
+            <i class="footer-social-icon fa-brands fa-twitter"></i>
+            <!-- INSTAGRAM ICON -->
+            <i class="footer-social-icon fa-brands fa-instagram"></i>
+            <!-- YOUTUBE ICON -->
+            <i class="footer-social-icon fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <!-- SITEMAP -->
+        <div class="col-lg-7 col-xxl-6 d-none d-lg-block">
+          <div class="row align-items-start mt-3">
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Company</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">About Us</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Oppportunity</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Gyms</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/gyms.html">Our Gyms</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Gym Rules</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <!-- SITEMAP HEADER -->
+              <h4 class="sitemap-header">Members</h4>
+
+              <!-- SITEMAP LINKS -->
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="/signup.html"
+                    >Membership Plans</a
+                  >
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">FAQs</a>
+                </li>
+                <li class="sitemap-item">
+                  <a class="sitemap-link" href="#">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <span class="footer-copyright mt-lg-4"
+        >Copyright 2022 &copy; GYMMBOXX Singapore</span
+      >
+    </footer>
 
     <!-- Bootstrap JS (Local) -->
     <script src="js/bootstrap.bundle.min.js"></script>

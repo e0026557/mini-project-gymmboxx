@@ -41,3 +41,83 @@ main {
 .bg-lightred {
   background-color: #d9515e;
 }
+
+.my-btn {
+  background-color: #63736d;
+}
+
+.my-btn:hover {
+  background-color: #d9515e;
+}
+
+.card-body {
+  background-image: url(../images/texture.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+}
+
+.card-title {
+  color: #f2f2f2;
+}
+
+.card-text {
+  padding-bottom: 16px;
+  color: #f2f2f2;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.container-month {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 10px;
+}
+
+.month {
+  color: #14100b;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container-price {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.price {
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.container-form {
+  border-radius: 24px;
+  padding: 0;
+  max-width: 960px;
+}
+
+.form-label {
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+.form-control {
+  border-radius: 50rem;
+  border: 0;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+#btn-submit {
+  width: auto;
+}
