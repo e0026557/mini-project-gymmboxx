@@ -244,7 +244,7 @@ body {
 
 .about-title {
   font-size: 18px;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
 .about-text {
@@ -335,10 +335,17 @@ body {
 
   .about-title {
     font-size: 24px;
+    padding-bottom: 8px;
   }
 
   .about-text {
     font-size: 16px;
+  }
+
+  .about-btn {
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
   }
 
   /* *** FOOTER *** */
@@ -415,10 +422,17 @@ body {
 
   .about-title {
     font-size: 24px;
+    padding-bottom: 8px;
   }
 
   .about-text {
     font-size: 14px;
+  }
+
+  .about-btn {
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
   }
 
   /* *** FOOTER *** */
@@ -505,10 +519,17 @@ body {
 
   .about-title {
     font-size: 30px;
+    padding-bottom: 10px;
   }
 
   .about-text {
     font-size: 18px;
+  }
+
+  .about-btn {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
   }
 }
 
