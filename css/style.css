@@ -440,6 +440,10 @@ body {
   }
 
   /* *** FOOTER *** */
+  .footer-logo-social-container {
+    padding-right: 80px;
+  }
+
   .footer-logo-img {
     height: 74px;
   }
@@ -534,6 +538,11 @@ body {
     position: absolute;
     bottom: 70px;
     left: 20px;
+  }
+
+  /* FOOTER */
+  .footer-logo-social-container {
+    padding-right: 120px;
   }
 }
 
