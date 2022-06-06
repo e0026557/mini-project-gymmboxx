@@ -2,7 +2,7 @@
 
 ![Screenshot of GYMMBOXX homepage](images/screenshot/devices%20screenshot.png)
 
-Link to project webpage [here](https://e0026557.github.io/mini-project-gymmboxx/).
+Link to project webpage [here](https://e0026557.github.io/tgc-18-mini-project/).
 
 ## Project Summary
 
